@@ -11,7 +11,7 @@ $value = 0;
 $test = new \App\ClassToProxy();
 $test->methodWithArgumentbyReference($value);
 
-echo sprintf("Value after call with proxy: %d", $value);
+echo sprintf("Value after call without proxy: %d", $value);
 
 echo "\n";
 
@@ -20,4 +20,4 @@ $value = 0;
 $test = new \App\Proxy();
 $test->methodWithArgumentbyReference($value);
 
-echo sprintf("Value after call without proxy: %d", $value);
+echo sprintf("Value after call with proxy: %d", $value);
